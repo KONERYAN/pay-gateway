@@ -1,0 +1,16 @@
+# Render 一键部署配置（在 render.com 连仓库后选 "Deploy from render.yaml"）
+services:
+  - type: web
+    name: pay-gateway
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.mjs
+    envVars:
+      - key: SERVICE_ID
+        sync: false          # 在 Render 控制台手动填真实/占位值
+      - key: SELLER_ID
+        sync: false
+      - key: PORT
+        sync: false          # Render 会自动注入，无需手填
