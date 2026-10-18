@@ -1,0 +1,11 @@
+# Cloudflare Workers 部署（免信用卡，推荐）
+name = "pay-gateway"
+main = "worker.mjs"
+compatibility_date = "2026-01-01"
+
+# 环境变量也可在 Dashboard → Workers & Pages → pay-gateway → Settings → Variables 里加
+# 或用： npx wrangler secret put SERVICE_ID
+[vars]
+# SERVICE_ID = "api_mock_service_id"
+# SELLER_ID = "2088000000000000"
+# PPT_SERVICE_ID = "api_mock_service_id"
