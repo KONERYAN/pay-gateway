@@ -1,15 +1,25 @@
 {
   "name": "pay-gateway",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "SkillHub Pay Skill backend gateway (402 Payment-Needed + fulfillment)",
+  "main": "server.mjs",
   "type": "commonjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "echo \"no test\" && exit 0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "skillhub",
+    "pay-skill",
+    "alipay",
+    "402",
+    "payment"
+  ],
+  "author": "KONERYAN",
+  "license": "MIT",
   "dependencies": {
     "@alipay/agent-payment": "^1.0.26",
     "@alipay/alipay-aipay": "^1.7.3"
